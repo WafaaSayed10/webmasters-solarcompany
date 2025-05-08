@@ -1,0 +1,1297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+}
+.container{
+    padding: 0 150px;
+}
+nav{
+    padding: 16px 150px;
+    background-color: #0B9586;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    mix-blend-mode: multiply;
+    display: block;
+}
+nav .links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+nav .links ul li{
+    border-radius: 5px;
+    padding: 8px 28px;
+}
+nav .links ul li:first-child{
+    border-bottom: 3px solid #0000004D;
+    background-color: #0000000F;
+}
+nav .links ul a{
+    text-decoration: none;
+}
+nav .links ul a, .contact p{
+    color: #FFFFFF;
+    letter-spacing: 0.94px;
+    font-weight: 400;
+    font-size: 18px;
+}
+nav .bar{
+    color: #FFFFFF;
+    display: none;
+}
+nav .contact{
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav .contact h3{
+    color: #FFFFFF;
+    letter-spacing: 0.94px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+#home{
+    background-image: url('../images/solar-panels-meadow 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#home:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#home .swiper{
+    color: #FFFFFF;
+    position: absolute;
+    top: calc(155px - 86px);
+    top: 4.3125rem;
+    display: flex;
+    align-items: center;
+    gap: calc(332.8258056640625px - 33.2825813293457px - 220.59385681152344px - 24.7684326171875px);
+}
+#home .swiper .num1{
+    width: 33.2825813293457px;
+    height: 24.7684326171875px;
+}
+#home .swiper .num{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.94px;
+    font-family: 'Akazan Regular', sans-serif;
+}
+#home .swiper .lines{
+    position: relative;
+}
+#home .swiper .line1{
+    width: 89.01155090332031px;
+    border: 3.75px solid #FFFFFF;
+    position: absolute;
+}
+#home .swiper .line2{
+    width: 220.59385681152344px;
+    border: 3.75px solid #575757;
+}
+#home .des{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 729px;
+}
+#home .des h1{
+    font-weight: 600;
+    font-size: 52px;
+    color: #FFFFFF;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+#home .des p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+#home .des .btns{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#home .des button{
+    padding: 12px 34px;
+    border-radius: 109px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 8%;
+    border: none;
+}
+#home .des .call{
+    background-color: #3CAB90;
+    color: #FFFFFF;
+}
+#home .des .requst{
+    background-color: #FFBB1C;
+    color: #2A3334;
+}
+.sectionHeader{
+    font-weight: 600;
+    font-size: 42px;
+}
+#installer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 23px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+#installer .installerText{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#installer .installerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#installer .installerText h2{
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #101828;
+}
+#installer .installerText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475467;
+}
+#installer .listInstallers{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#installer .listItem{
+    display: flex;
+    gap: 10px;
+}
+#installer .listItem span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    color: #84BD3A;
+    font-family: 'Akazan Regular', sans-serif;
+}
+#installer .listItem p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+#installer .installerImage{
+    position: relative;
+    width: 518.12px;
+    display: flex;
+    justify-content: end;
+}
+#installer .installerImage .image{
+    border-radius: 12px;
+    width: 469px;
+    overflow: hidden;
+}
+#installer .installerImage .image img{
+    width: 100%;
+    height: 100%;
+}
+#installer .Charging{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    padding: 24px 30px;
+    border-radius: 12px;
+    background-color: #FFBB1C;
+    width: 266px;
+}
+#installer .Charging img{
+    width: 90px;
+    height: 90px;
+}
+#installer .Charging p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.94px;
+    color: #2A3334;
+    margin-top: 28px;
+    font-family: 'Akazan Regular', sans-serif;
+}
+#power{
+    background-image: url('../images/8116 1.png');
+    height: 505px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.power{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 678px;
+}
+#power h2{
+    margin-bottom: 32px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #FFFFFF;
+}
+#power p{
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+#power button{
+    padding: 12px 34px;
+    border-radius: 109px;
+    background-color: #FFBB1C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 8%;
+    color: #2A3334;
+    border: none;
+}
+.solarKits{
+    padding: 80px 0;
+}
+.solarKits .head{
+    text-align: center;
+    margin: 0 auto 40px auto;
+    width: 936px;
+    width: 65%;
+}
+.solarKits .head h2{
+    margin-bottom: 24px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #101828;
+}
+.solarKits .head p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475467;
+    margin-bottom: 0;
+}
+.solarKitsCards{
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.solarKitsCard{
+    box-shadow: 0 4px 30px 0 #0000000D;
+}
+.solarKitsCard img{
+    width: 100%;
+}
+.solarKitsCardBody{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.solarKitsCardBody h4{
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+.solarKitsCardBody p{
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475467;
+}
+.solarKitsCardBody button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #3CAB90;
+    border: none;
+    background-color: transparent;
+    margin-right: 8px;
+}
+.solarKitsCardBody i{
+    color: #3CAB90;
+}
+#repairs{
+    width: 100%;
+    height: 505px;
+    position: relative;
+}
+#repairs img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.repairsDesc{
+    width: 59.58%;
+    border-radius: 12px;
+    padding: 44px;
+    background-color: #00000091;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(12px);
+}
+.repairsDesc h2{
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+.repairsDesc p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+#energy{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    background-color: #FFBB1C0D;
+}
+#energy .energyHeader .energyIcon{
+    background-color: #3CAB90;
+    border-radius: 10px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 10px #3CAB9026;
+    margin-bottom: 20px;
+}
+#energy .energyHeader .energyIcon img{
+    width: 28px;
+    height: 28px;
+}
+#energy .energyHeader h2{
+    line-height: 100%;
+    letter-spacing: -2%;
+    margin-bottom: 20px;
+}
+#energy .energyHeader p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.energyCards{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 32px;
+    align-items: start; 
+}
+.energyCard{
+    border: 1px solid #3CAB90;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #3CAB900D;
+    box-shadow: 0 4px 30px 0 #0000000D;
+}
+.energyCardImage{
+    margin-bottom: 32px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3CAB9026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 106px;
+    overflow: hidden;
+}
+.energyCardImage .fimage{
+    width: 225px;
+    height: 49px;
+    mix-blend-mode: Luminosity;
+}
+.energyCardImage .simage{
+    width: 159px;
+    height: 86px;
+    mix-blend-mode: Luminosity;
+}
+.energyCardBody h4{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+.energyCardBody p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475467;
+    margin-bottom: 20px;
+}
+.energyCardBody p span{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+}
+.energyCardBody button{
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #3CAB90;
+    background-color: transparent;
+    border: none;
+}
+.energyCardBody i{
+    color: #3CAB90;
+}
+#value{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#value h2{
+    margin-bottom: 32px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #101828;
+    text-align: center;
+}
+#value p.des{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #475467;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.valueCards{
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.valueCard{
+    border: 1px solid #3CAB90;
+    background-color: #3CAB900D;
+    border-radius: 12px;
+    padding: 32px;
+}
+.valueCard img{
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+}
+.valueCard h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+.valueCard p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475467;
+}
+#say{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+#say .sayHeader img{
+    margin-bottom: 28px;
+}
+#say .sayHeader h2{
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0%;
+    color: #1C1C1C;
+}
+#say .sayHeader p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #1C1C1C;
+}
+#say .sayCard{
+    padding: 40px;
+    border-radius: 24px;
+    background-color: #3CAB900F;
+}
+.sayCardHeader{
+    margin-bottom: 87px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sayCardHeader h4{
+    margin-bottom: 52px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3CAB90;
+}
+.sayCardHeader p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #101828;
+}
+.dots{
+    display: flex;
+    gap: 8px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.sayCardHeader .active{
+    background-color: #6B6B6B;
+}
+.sayCard .userPhoto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sayCardUser{
+    display: flex;
+    justify-content: space-between;
+}
+.sayCardUserDetails{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sayCardUserDetails h4{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1C1C1C;
+}
+.sayCardUserDetails p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1C1C1C;
+}
+.arrows{
+    display: flex;
+    gap: 16px;
+}
+.arrows .arrow{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #1C1C1C;
+    border-radius: 50%;
+    position: relative;
+}
+.arrows .arrow img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #283646;
+}
+.logoLinks{
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.logoLinks .logoImage{
+    width: 185px;
+    height: 64px;
+    margin-bottom: 38px;
+    background-image: url(../images/c6215689f328463ff2f00245f4cbb6580d06141e.jpg);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: Luminosity;
+}
+.logoLinks .links{
+    display: flex;
+    gap: 40px;
+}
+.logoLinks .links a{
+    font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+color: #FFFFFF;
+}
+.subscribe{
+    padding: 0 1px;
+}
+.subscribe p{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+margin-bottom: 10px;
+color: #FFFFFF;
+}
+.subscribeInp{
+    border-radius: 38px;
+    border: 1px solid #B3BDC7;
+    background-color: #FFFFFF17;
+    padding-left: 20px;
+    position: relative;
+}
+.subscribeInp input{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+background-color: transparent;
+border: none;
+}
+.subscribeInp input::placeholder{
+    color: #92989F;
+}
+.subscribeInp button{
+padding: 12px 34px;
+border-radius: 109px;
+background-color: #FFBB1C;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: center;
+color: #FFFFFF;
+border: none;
+}
+.hRow{
+    width: 100%;
+height: 2px;
+background-color: #71777D;
+}
+footer .rights{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+footer .rights p{
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.26px;
+color: #92989F;
+}
+@media (max-width: 575px){
+    nav{
+        padding: 10px 30px;
+    }
+    nav img{
+        width: 80px;
+    }
+    nav .contact p{
+        font-weight: 300;
+        font-size: 10px;
+    }
+    nav .bar{
+        display: block;
+    }
+    nav .contact{
+        display: none;
+    }
+    nav .links ul{
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    nav .links ul a{
+        font-size: 12px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+    #home .swiper{
+        gap: 20px;
+    }
+    #home .swiper .num{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        font-weight: 200;
+        font-size: 12px;
+    }
+    #home .swiper .line1{
+        width: 70px;
+        border: 2px solid #FFFFFF;
+    }
+    #home .swiper .line2{
+        width: 150px;
+        border: 2px solid #575757;
+    }
+    #home .des{
+        width: auto;
+    }
+    #home .des h1{
+        font-weight: 500;
+        font-size: 35px;
+    }
+    #home .des p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+    #home .des .btns{
+        gap: 16px;
+    }
+    #home .des button{
+        padding: 10px 25px;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    .sectionHeader{
+        font-weight: 400;
+        font-size: 35px;
+    }
+    #installer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #installer .installerImage{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    #installer .installerImage .image{
+        border-radius: 12px;
+        width: 90%;
+        overflow: hidden;
+    }
+    .power{
+        width: 90%;
+    }
+    .solarKits .head{
+        width: auto;
+    }
+    .solarKitsCards{
+        gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #repairs{
+        max-height: 100vh;
+    }
+    .repairsDesc{
+        width: 80%;
+        padding: 20px;
+    }
+    .repairsDesc p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #energy{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .energyCards{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 32px;
+    }
+    .valueCards{
+        gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #say{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1, auto);
+    }
+    #say .sayHeader h2{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    #say .sayHeader p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .sayCardHeader p{
+        font-size: 18px;
+    }
+    .sayCardUserDetails h4{
+        font-size: 14px;
+    }
+    .sayCardUserDetails p{
+        font-size: 12px;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .logoLinks .logoImage{
+        margin-bottom: 20px;
+    }
+    footer .logoLinks{
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logoLinks .links{
+        gap: 20px;
+    }
+    .logoLinks .links a{
+        font-size: 10px;
+    }
+    .subscribeInp input{
+        margin-bottom: 5px;
+    }
+    .subscribeInp button{
+        padding: 5px 15px;
+        }
+    footer .rights{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .container{
+        padding: 0 30px;
+    }
+    nav{
+        padding: 12px 30px;
+    }
+    nav .links ul{
+        display: none;
+    }
+    nav .links ul a, .contact p{
+        font-size: 12px;
+    }
+    nav .contact{
+        padding-left: 5px;
+    }
+    nav .contact h3{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #home .swiper{
+        gap: 22px;
+    }
+    #home .swiper .num{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    #home .swiper .line1{
+        width: 80px;
+        border: 2.5px solid #FFFFFF;
+    }
+    #home .swiper .line2{
+        width: 200px;
+        border: 2.5px solid #575757;
+    }
+    #home .des{
+        width: 500px;
+    }
+    #home .des h1{
+        font-weight: 400;
+        font-size: 2.6rem;
+    }
+    #home .des p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    #home .des .btns{
+        gap: 20px;
+    }
+    #home .des button{
+        padding: 11px 30px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .sectionHeader{
+        font-weight: 400;
+        font-size: 35px;
+    }
+    #installer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #installer .installerImage{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    #installer .installerImage .image{
+        border-radius: 12px;
+        width: 90%;
+        overflow: hidden;
+    }
+    .power{
+        width: 80%;
+    }
+    .solarKits{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .solarKits .head{
+        width: auto;
+    }
+    .solarKitsCards{
+        gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #repairs{
+        max-height: 100vh;
+    }
+    .repairsDesc{
+        width: 80%;
+        padding: 20px;
+    }
+    .repairsDesc p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #energy{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .energyCards{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 32px;
+    }
+    .valueCards{
+        gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #say{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1, auto);
+    }
+    #say .sayHeader h2{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    #say .sayHeader p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .sayCardHeader p{
+        font-size: 18px;
+    }
+    .sayCardUserDetails h4{
+        font-size: 14px;
+    }
+    .sayCardUserDetails p{
+        font-size: 12px;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .logoLinks .logoImage{
+        margin-bottom: 20px;
+    }
+    footer .logoLinks{
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logoLinks .links a{
+        font-size: 12px;
+    }
+    .subscribeInp{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .rights{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+@media(min-width:767px) and (max-width:991px){
+    .container{
+        padding: 0 60px;
+    }
+    nav{
+        padding: 14px 60px;
+    }
+    nav .links ul li{
+        padding: 5px 16px;
+    }
+    nav .links ul a, .contact p{
+        font-size: 12px;
+    }
+    nav .contact{
+        padding-left: 5px;
+    }
+    nav .contact h3{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #home .swiper .num{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    #home .swiper .line1{
+        width: 89px;
+        border: 3px solid #FFFFFF;
+    }
+    #home .swiper .line2{
+        width: 220px;
+        border: 3px solid #575757;
+    }
+    #home .des{
+        width: 629px;
+    }
+    #home .des h1{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    #home .des p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #home .des .btns{
+        gap: 22px;
+    }
+    #home .des button{
+        padding: 12px 32px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .sectionHeader{
+        font-weight: 400;
+        font-size: 35px;
+    }
+    #installer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #installer .installerImage{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    #installer .installerImage .image{
+        border-radius: 12px;
+        width: 90%;
+        overflow: hidden;
+    }
+    .power{
+        width: 80%;
+    }
+    .solarKits{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .solarKits .head{
+        width: auto;
+    }
+    .solarKitsCards{
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #repairs{
+        max-height: 100vh;
+    }
+    .repairsDesc{
+        width: 80%;
+        padding: 20px;
+    }
+    .repairsDesc p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #energy{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .valueCards{
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #say{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(2, auto);
+    }
+    #say .sayHeader h2{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    #say .sayHeader p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .sayCardHeader p{
+        font-size: 18px;
+    }
+    .sayCardUserDetails h4{
+        font-size: 14px;
+    }
+    .sayCardUserDetails p{
+        font-size: 12px;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .logoLinks .logoImage{
+        margin-bottom: 20px;
+    }
+    footer .logoLinks{
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logoLinks .links a{
+        font-size: 12px;
+    }
+    .subscribeInp{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .rights{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+@media(min-width:991px) and (max-width:1199px){
+    .container{
+        padding: 0 80px;
+    }
+    nav{
+        padding: 16px 80px;
+    }
+    nav .links ul{
+        gap: 4px;
+    }
+    nav .links ul li{
+        padding: 6px 18px;
+    }
+    nav .links ul li:first-child{
+        border-bottom: 2px solid #0000004D;
+    }
+    nav .links ul a, .contact p{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    nav .contact{
+        padding-left: 6px;
+    }
+    nav .contact h3{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .valueCards{
+        gap: 32px;
+        grid-template-columns: repeat(2, auto);
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .logoLinks .logoImage{
+        margin-bottom: 20px;
+    }
+    footer .logoLinks{
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .logoLinks .links a{
+        font-size: 12px;
+    }
+    .subscribeInp{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .rights{
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
