@@ -142,6 +142,7 @@ nav .contact h3{
     line-height: 100%;
     letter-spacing: 8%;
     border: none;
+    cursor: pointer;
 }
 #home .des .call{
     background-color: #3CAB90;
@@ -573,6 +574,7 @@ nav .contact h3{
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    position: relative;
 }
 .sayCardHeader h4{
     margin-bottom: 52px;
@@ -699,12 +701,14 @@ color: #FFFFFF;
     position: relative;
 }
 .subscribeInp input{
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.3px;
-background-color: transparent;
-border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    background-color: transparent;
+    border: none;
+}.subscribeInp input:focus{
+    outline: none;
 }
 .subscribeInp input::placeholder{
     color: #92989F;
@@ -720,6 +724,7 @@ letter-spacing: 0.3px;
 text-align: center;
 color: #FFFFFF;
 border: none;
+cursor: pointer;
 }
 .hRow{
     width: 100%;
@@ -787,6 +792,7 @@ color: #92989F;
     }
     #home .des{
         width: auto;
+        padding-right: 30px;
     }
     #home .des h1{
         font-weight: 500;
@@ -826,6 +832,7 @@ color: #92989F;
     }
     .power{
         width: 90%;
+        padding-right: 30px;
     }
     .solarKits .head{
         width: auto;
@@ -869,6 +876,12 @@ color: #92989F;
         font-size: 35px;
         line-height: 50px;
     }
+    .sayCardHeader{
+        margin-bottom: 30px;
+    }
+    .sayCardHeader h4{
+        margin-bottom: 30px;
+    }
     #say .sayHeader p{
         font-weight: 400;
         font-size: 16px;
@@ -876,6 +889,20 @@ color: #92989F;
     }
     .sayCardHeader p{
         font-size: 18px;
+    }
+    .dots{
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .sayCardUser{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .arrows{
+        justify-content: end;
     }
     .sayCardUserDetails h4{
         font-size: 14px;
@@ -889,6 +916,8 @@ color: #92989F;
     }
     .logoLinks .logoImage{
         margin-bottom: 20px;
+        width: 80px;
+        height: 30px;
     }
     footer .logoLinks{
         margin-bottom: 20px;
@@ -906,7 +935,7 @@ color: #92989F;
     }
     .subscribeInp button{
         padding: 5px 15px;
-        }
+    }
     footer .rights{
         flex-direction: column;
         gap: 15px;
