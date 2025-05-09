@@ -861,6 +861,13 @@ color: #92989F;
         grid-template-columns: repeat(1 , 1fr);
         gap: 32px;
     }
+    #value{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .solarKits{
+        padding: 40px 0;
+    }
     .valueCards{
         gap: 32px;
         grid-template-columns: repeat(1, 1fr);
@@ -1054,6 +1061,10 @@ color: #92989F;
     .energyCards{
         grid-template-columns: repeat(1 , 1fr);
         gap: 32px;
+    }
+    #value{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .valueCards{
         gap: 32px;
